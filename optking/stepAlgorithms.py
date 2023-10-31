@@ -580,7 +580,7 @@ class RFO(QuasiNewtonOptimization, ABC):
 
 class RestrictedStepRFO(RFO):
     """Rational Function approximation (or 2x2 Pade approximation) for step.
-    Uses Scaling Parameter to adjust step size analagous to the NR hessian shift parameter."""
+    Uses Scaling Parameter to adjust step size analogous to the NR hessian shift parameter."""
 
     def __init__(self, molsys, history, params):
         super().__init__(molsys, history, params)
@@ -707,7 +707,7 @@ class RestrictedStepRFO(RFO):
         return alpha, rfo_step_report
 
     def _scale_and_normalize(self, RFOmat, alpha=1):
-        """Scale the RFO matrix given alpha. Compute eigenvectors and eigenvalaues. Peform normalization
+        """Scale the RFO matrix given alpha. Compute eigenvectors and eigenvalues. Perform normalization
         and report values
 
         Parameters
@@ -830,7 +830,7 @@ class RestrictedStepRFO(RFO):
             logger.warning("\tRejecting RFO root %d because %s", index + 1, mesg)
             return False
 
-        # Check symmetry of root. Leave True if unessecary. Not currently functioning
+        # Check symmetry of root. Leave True if unnecessary. Not currently functioning
         symmetric = True if not self.params.accept_symmetry_breaking else is_dq_symmetric(self.molsys, vector[:-1])
 
         if not symmetric:

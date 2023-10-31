@@ -1,4 +1,4 @@
-#! SCF cc-pVTZ geometry optimzation, with Z-matrix input
+#! SCF cc-pVTZ geometry optimization, with Z-matrix input
 import optking
 
 REF_energy = -76.057769702
