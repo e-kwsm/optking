@@ -151,9 +151,9 @@ def displace_frag(F, dq_in, ensure_convergence=False):
     ----------
     F  : Fragment (geometry is changed)
     dq : ndarray
-        step (displacement) in internal coordiantes
+        step (displacement) in internal coordinates
     ensure_convergence : bool
-        reduce the magntitude of the step size as necessary until the
+        reduce the magnitude of the step size as necessary until the
         iterative back-transformation actually converges.
 
     Returns
@@ -311,7 +311,7 @@ def back_transformation(
     q_orig = intcosMisc.q_values(intcos, geom)
     q_target = q_orig + dq
 
-    if print_lvl > 1: # printing is supressed for frozen coordinate cleanup
+    if print_lvl > 1: # printing is suppressed for frozen coordinate cleanup
         target_step_str = "Initial target in back_transformation():\n"
         target_step_str += "          Original         Target           Dq\n"
         for i in range(len(dq)):
