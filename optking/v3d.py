@@ -150,8 +150,8 @@ def _calc_angle(vec_1, vec_2, tol=1.0e-14):
     Should only be called by tors or angle. Error checking and vector creation
     is performed in angle() or tors() previously
 
-    Paramters
-    ---------
+    Parameters
+    ----------
     vec_1 : ndarray
         first vector of an angle
     vec_2 : ndarray
