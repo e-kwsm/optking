@@ -92,7 +92,7 @@ def hguess_lindh_rho(ZA, ZB, RAB):
 def tokenize_input_string(inString):
     """
     params: string of integers corresponding to internal coordinates
-    returns: a list of integers correspoding to an atom
+    returns: a list of integers corresponding to an atom
     removes spaces or non integer characters from string of internal coordinates to be frozen
     """
     outString = inString.replace("(", "").replace(")", "").replace(",", "")

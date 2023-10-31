@@ -232,7 +232,7 @@ def _print_convergence_table(
         + " {11:1s} {7:11.2e} {12:1s}  ~\n"
     )
 
-    # Get all the values for convergence critera and active criteria markers
+    # Get all the values for convergence criteria and active criteria markers
     conv_symbols = {
         key: _get_criteria_symbol(conv_met.get(key), conv_active.get(key)) for key in conv_met
     }
@@ -298,7 +298,7 @@ def _print_active_criteria(conv_status, conv_requirements):
         conv_str += "\n\t|"
 
         for key in conv_status:
-            # conv_requirments[key] is an empty list if no criteria match (not guaranteed for conv_status)
+            # conv_requirements[key] is an empty list if no criteria match (not guaranteed for conv_status)
             if conv_requirements.get(key)[0] is None or i >= len(conv_status.get(key)):
                 conv_str += f"{'': ^24}|"
             else:

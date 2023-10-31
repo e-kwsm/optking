@@ -231,7 +231,7 @@ class Frag:
     def update_dihedral_orientations(self):
         """Update orientation of each dihedrals/tors coordinate
         This saves an indicator if dihedral is slightly less than pi,
-        or slighly more than -pi.  Subsequently, computation of values
+        or slightly more than -pi.  Subsequently, computation of values
         can be greater than pi or less than -pi to enable computation
         of Delta(q) when q passed through pi.
         """
