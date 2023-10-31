@@ -1,4 +1,4 @@
-#! SCF STO-3G geometry optimzation, with Z-matrix input, by finite-differences
+#! SCF STO-3G geometry optimization, with Z-matrix input, by finite-differences
 import optking
 
 REF_energy = -74.965901192
