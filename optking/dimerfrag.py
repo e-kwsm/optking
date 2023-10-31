@@ -222,7 +222,7 @@ class DimerFrag(object):
         self._pseudo_frag = frag.Frag(Z, ref_geom, masses)
 
         # adds the coordinates connecting A2-A1-A0-B0-B1-B2
-        # sets d_on to indicate which ones (of the 6) are unusued
+        # sets d_on to indicate which ones (of the 6) are unused
         # turn all coordinates on ; turn off unused ones below
         self._D_on = 6 * [True]
         one_stre = None
