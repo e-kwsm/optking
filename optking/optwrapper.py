@@ -68,7 +68,7 @@ def optimize_psi4(calc_name, program="psi4", dertype=None, **xtra_opt_params):
         }
     except Exception as error:
         logger.critical(
-            "A critical exception has occured:\n%s - %s",
+            "A critical exception has occurred:\n%s - %s",
             type(error),
             str(error),
             exc_info=True
@@ -164,7 +164,7 @@ def initialize_from_psi4(calc_name, program, computer_type, dertype=None, **xtra
 
 
 def optimize_qcengine(opt_input, computer_type="qc"):
-    """Try to optimize, find TS, or find IRC of the system as specifed by a QCSchema
+    """Try to optimize, find TS, or find IRC of the system as specified by a QCSchema
     OptimizationInput.
 
     Parameters
@@ -191,7 +191,7 @@ def optimize_qcengine(opt_input, computer_type="qc"):
         computer = make_computer(opt_input, computer_type)
         opt_output = optimize(oMolsys, computer)
     except Exception as error:
-        logger.critical("A critical error has occured: %s - %s", type(error), error, exc_info=True)
+        logger.critical("A critical error has occurred: %s - %s", type(error), error, exc_info=True)
         opt_output = {
             "success": False,
             "error": {"error_type": type(error), "error_message": str(error)},

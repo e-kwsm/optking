@@ -1,4 +1,4 @@
-#! SCF cc-pVDZ geometry optimzation, with Z-matrix input
+#! SCF cc-pVDZ geometry optimization, with Z-matrix input
 import optking
 
 # nucenergy = 9.3007

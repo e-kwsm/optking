@@ -1,4 +1,4 @@
-#! SCF cc-pVDZ geometry optimzation of ketene, starting from bent structure
+#! SCF cc-pVDZ geometry optimization of ketene, starting from bent structure
 import optking
 scf_E  = -151.740757212
 

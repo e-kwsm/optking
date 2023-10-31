@@ -1,4 +1,4 @@
-#! B3LYP cc-pVDZ geometry optimzation of phenylacetylene, starting from
+#! B3LYP cc-pVDZ geometry optimization of phenylacetylene, starting from
 #! not quite linear structure
 import optking
 b3lyp_E  = 308.413691796 # from tight run

@@ -1,4 +1,4 @@
-#! SCF STO-3G geometry optimzation, with Z-matrix input
+#! SCF STO-3G geometry optimization, with Z-matrix input
 import os
 import pathlib
 import json
@@ -58,7 +58,7 @@ def test_hf_g_h2o(check_iter):
     assert last_mol.get('qm').get('elem').tolist() == ['O', 'H', 'H']
 
 
-#! SCF cc-pVDZ geometry optimzation, Z-matrix input, tight convergence
+#! SCF cc-pVDZ geometry optimization, Z-matrix input, tight convergence
 def test_hf_g_h2o_tight(check_iter):
     h2o = psi4.geometry(
         """
@@ -114,7 +114,7 @@ def test_hf_g_h2o_large(check_iter):
     utils.compare_iterations(json_output, 6, check_iter)
 
 
-#! SCF cc-pVDZ geometry optimzation of ketene, starting from bent structure
+#! SCF cc-pVDZ geometry optimization of ketene, starting from bent structure
 def test_hf_g_ketene(check_iter):
     ketene = psi4.geometry(
         """

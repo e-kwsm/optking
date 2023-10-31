@@ -609,7 +609,7 @@ class EngineHelper(Helper):
     """
 
     def __init__(self, optimization_input, **kwargs):
-        """Create an EngineHelper. Can optimize interactivly or non interactively.
+        """Create an EngineHelper. Can optimize interactively or non interactively.
 
         Parameters
         ----------

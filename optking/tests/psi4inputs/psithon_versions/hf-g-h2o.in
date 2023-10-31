@@ -1,4 +1,4 @@
-#! SCF STO-3G geometry optimzation, with Z-matrix input
+#! SCF STO-3G geometry optimization, with Z-matrix input
 import optking
 
 #REF_nucenergy =   8.9064890670

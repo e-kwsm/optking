@@ -417,7 +417,7 @@ class OptimizationManager(stepAlgorithms.OptimizationInterface):
         return self.protocol
 
     def clear(self):
-        """Reset history (inculding all steps) and molecule"""
+        """Reset history (including all steps) and molecule"""
         self.history.steps = []
         self.molsys.intcos = []
         self.step_number = 0
@@ -524,7 +524,7 @@ class OptimizationManager(stepAlgorithms.OptimizationInterface):
 
     def opt_error_handler(self, error):
         """OptError indicates an unrecoverable error. Print information and trigger cleanup."""
-        logger.critical("\tA critical optimization-specific error has occured.")
+        logger.critical("\tA critical optimization-specific error has occurred.")
         logger.critical("\tResetting all optimization options for potential queued jobs.\n")
         logger.exception("Error caught:" + str(error))
         # Dump histories if possible
