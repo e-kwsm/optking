@@ -75,7 +75,7 @@ Running through QCEngine
 ------------------------
 
 A basic driver has been implemented in QCEngine. QCEngine is built upon QCElemental which provides input
-validation and standardized input/output. To see the requirements for an Optimziation Input check MolSSI's
+validation and standardized input/output. To see the requirements for an Optimization Input check MolSSI's
 `qcelemental documentation <http://docs.qcarchive.molssi.org/projects/QCElemental/en/stable/api/qcelemental.models.OptimizationInput.html#qcelemental.models.OptimizationInput>`_. **NOTE** QCElemental assumes atomic units by default:
 
 .. code-block:: python
