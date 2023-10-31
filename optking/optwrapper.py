@@ -59,7 +59,7 @@ def optimize_psi4(calc_name, program="psi4", dertype=None, **xtra_opt_params):
         logger.critical(f"Error placed in qcschema: {opt_output}")
         logger.debug(str(opt_output))
     except Exception as error:
-        logger.critical("An unknown error has occured and evaded error checking")
+        logger.critical("An unknown error has occurred and evaded error checking")
         opt_output = {
             "success": False,
             "error": {"error_type": error, "error_message": str(error)},
@@ -147,7 +147,7 @@ def initialize_from_psi4(calc_name, program, computer_type, dertype=None, **xtra
 
 
 def optimize_qcengine(opt_input, computer_type="qc"):
-    """Try to optimize, find TS, or find IRC of the system as specifed by a QCSchema
+    """Try to optimize, find TS, or find IRC of the system as specified by a QCSchema
     OptimizationInput.
 
         Parameters
@@ -179,7 +179,7 @@ def optimize_qcengine(opt_input, computer_type="qc"):
         }
         logger.critical(f"Error placed in qcschema: {opt_output}")
     except Exception as error:
-        logger.critical("An unknown error has occured and evaded all error checking")
+        logger.critical("An unknown error has occurred and evaded all error checking")
         opt_output = {
             "success": False,
             "error": {"error_type": error, "error_message": str(error)},

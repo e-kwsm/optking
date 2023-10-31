@@ -239,16 +239,16 @@ class OptParams(object):
         # |optking__flexible_g_convergence| is also on.
         # See Table :ref:`Geometry Convergence <table:optkingconv>` for details.
         self.g_convergence = uod.get("G_CONVERGENCE", "QCHEM")
-        # Convergence criterion for geometry optmization: maximum force (internal coordinates, au)
+        # Convergence criterion for geometry optimization: maximum force (internal coordinates, au)
         self.max_force_g_convergence = uod.get("MAX_FORCE_G_CONVERGENCE", 3.0e-4)
-        # Convergence criterion for geometry optmization: rms force  (internal coordinates, au)
+        # Convergence criterion for geometry optimization: rms force  (internal coordinates, au)
         self.rms_force_g_convergence = uod.get("RMS_FORCE_G_CONVERGENCE", 3.0e-4)
-        # Convergence criterion for geometry optmization: maximum energy change
+        # Convergence criterion for geometry optimization: maximum energy change
         self.max_energy_g_convergence = uod.get("MAX_ENERGY_G_CONVERGENCE", 1.0e-6)
-        # Convergence criterion for geometry optmization:
+        # Convergence criterion for geometry optimization:
         # maximum displacement (internal coordinates, au)
         self.max_disp_g_convergence = uod.get("MAX_DISP_G_CONVERGENCE", 1.2e-3)
-        # Convergence criterion for geometry optmization:
+        # Convergence criterion for geometry optimization:
         # rms displacement (internal coordinates, au)
         self.rms_disp_g_convergence = uod.get("RMS_DISP_G_CONVERGENCE", 1.2e-3)
         # Even if a user-defined threshold is set, allow for normal, flexible convergence criteria
