@@ -21,7 +21,7 @@ The optimization coordinates can be added manually.::
     >>> intcos = [optking.Stre(1, 2), optking.Stre(2, 3), optking.Bend(1, 2, 3)]
     >>> fragment.intcos = intcos  # intcos can also be added at instantiation
 
-More typically, the coordinate system is automatically generated once the full molecular system is built and then edited if nessecary.::
+More typically, the coordinate system is automatically generated once the full molecular system is built and then edited if necessary.::
 
     >>> molsys = optking.Molsys([fragment])
     >>> optking.make_internal_coords(molsys)

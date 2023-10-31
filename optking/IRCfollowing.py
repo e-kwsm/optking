@@ -284,7 +284,7 @@ class IntrinsicReactionCoordinate(OptimizationInterface):
         logger.debug("Lambda between %10.5f and %10.5f" % (lb_lambda, up_lambda))
         logger.debug("for Lagrangian %10.5f to  %10.5f" % (lb_lagrangian, up_lagrangian))
 
-        # Calulate lambda using Householder method
+        # Calculate lambda using Householder method
         # prev_lambda = -999
         prev_lambda = Lambda
         lagIter = 0
