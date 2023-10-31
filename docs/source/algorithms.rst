@@ -8,11 +8,11 @@ Algorithms include
     * NR
     * Rational function optimization (RFO)
     * Restricted Step RFO
-    * Partioned RFO
+    * Partitioned RFO
     * Intrinsic Reaction Coordinate (IRC) optimizations 
 
 The type of optimization is controlled by the `step_type` and `opt_type` keywords. `step_type` chooses optimization algorithm (SD, NR, etc.)
-`opt_type` selects the kind of optimization (min, TS, or IRC) and unless overriden chooses the appropriate (or default) `step_type`.
+`opt_type` selects the kind of optimization (min, TS, or IRC) and unless overridden chooses the appropriate (or default) `step_type`.
 
 API Documentation
 -----------------
