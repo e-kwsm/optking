@@ -129,7 +129,7 @@ def add_intcos_from_connectivity(C, intcos, geom, ignore_coords=[]):
     Parameters
     ----------
     C : ndarray
-        (nat, nat) matrix desribing connectivity
+        (nat, nat) matrix describing connectivity
         see intcosMisc.connectivity_from_distances()
     intcos : list[simple.Simple]
             (nat) list of current internal coordinates (Stre, Bend, Tors)
@@ -264,7 +264,7 @@ def add_bend_from_connectivity(C, intcos, geom, ignore_coords=[]):
 
 def add_tors_from_connectivity(C, intcos, geom):
     """
-    Add torisions for all bonds present and determine linearity from existance of
+    Add torsions for all bonds present and determine linearity from existence of
     linear bends
 
     Parameters
@@ -1135,7 +1135,7 @@ def add_dimer_frag_intcos(o_molsys, params):
 
     else:  # autogenerate interfswap_min_maxragment coordinates
         # Tolerance for collinearity of ref points. Can be mad smaller, but its
-        # riskier to start wth ref points the make very large angles
+        # riskier to start with ref points the make very large angles
         col_tol = params.interfrag_collinear_tol
         for A, B in combinations(range(o_molsys.nfragments), r=2):
             xyzA = o_molsys.frag_geom(A)

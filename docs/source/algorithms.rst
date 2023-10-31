@@ -4,7 +4,7 @@ Algorithms
 Methods Implemented
 ~~~~~~~~~~~~~~~~~~~
 
-Optking performs Newton-Raphson (NR) and Qausi-NR optimizations for small to medium-sized molecules.
+Optking performs Newton-Raphson (NR) and Quasi-NR optimizations for small to medium-sized molecules.
 
 Algorithms include:
 
@@ -17,13 +17,13 @@ Algorithms include:
 
 * TS
     * Image RFO
-    * Partioned RFO
+    * Partitioned RFO
 
 * Reaction Path
     * Intrinsic Reaction Coordinate (IRC)
 
 The type of optimization is controlled by the ``step_type`` and ``opt_type`` keywords. ``step_type`` chooses optimization algorithm (SD, NR, etc.)
-``opt_type`` selects the kind of optimization (min, TS, or IRC) and unless overriden chooses the appropriate (or default) ``step_type``.
+``opt_type`` selects the kind of optimization (min, TS, or IRC) and unless overridden chooses the appropriate (or default) ``step_type``.
 
 Classes and Functions
 ~~~~~~~~~~~~~~~~~~~~~

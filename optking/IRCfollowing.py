@@ -368,7 +368,7 @@ class IntrinsicReactionCoordinate(OptimizationInterface):
             lagIter += 1
             Lambda -= 0.001
 
-        # Calulate lambda using Householder method
+        # Calculate lambda using Householder method
         # prev_lambda = -999
         prev_lambda = Lambda
         lagIter = 0

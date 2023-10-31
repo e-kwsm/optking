@@ -5,7 +5,7 @@ Redundant internal coordinates are the default coordinate set for OptKing. All p
 and dihedral angles are constructed. Automatic supplementation of cartesian coordinates is in development.
 If difficulty is encountered with linear coordinates, switching to ``opt_coordinates = 'cartesian'`` may be
 necessary. In some cases, a full set of internal and cartesian coordinates has been found to work well; this
-corresonds to ``opt_coordinates = 'both'``
+corresponds to ``opt_coordinates = 'both'``
 
 It should be noted that OptKing does NOT accept zmatrix coordinates through any of it's supported interfaces.
 Communication of the initial geometry between OptKing and qcengine or psi4 is purely in cartesian coordinates.
@@ -23,7 +23,7 @@ For users of the old c++ OptKing, the ``fixed_<coord>`` options have been replac
 ``ranged_<coord>`` counterparts. This keyword adds forces to the optimization to keep the coordinate within a desired
 min and max value (these can be set arbitrarily close to each other to recover the ``fixed_<coord>`` behavior).
 
-Where applicable input should be specified in Angstroms and Degrees (even if the geomtry is provided in atomic units through QCEngine).
+Where applicable input should be specified in Angstroms and Degrees (even if the geometry is provided in atomic units through QCEngine).
 
 Frozen Coordinates
 ------------------

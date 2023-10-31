@@ -6,12 +6,12 @@ Overview
 
 .. |delta|  unicode:: U+0394
 
-Optking utilizes a number of optimization presets which mirror and/or mimic the optmization behavior from a number
+Optking utilizes a number of optimization presets which mirror and/or mimic the optimization behavior from a number
 of popular Quantum Chemistry packages. These may be selected with the ``G_CONVERGENCE`` keyword. Descriptions of each
 preset may be found below. See Notes [#fe] and [#ff] for clarification on what combinations of
 criteria are required or allowed.
 
-For greater control one or more ctriteria can be selectively activated through use of the ``*<CRITERIA>_G_CONVERGENCE*`` keywords.
+For greater control one or more criteria can be selectively activated through use of the ``*<CRITERIA>_G_CONVERGENCE*`` keywords.
 In order to modify a preset both ``*FLEXIBLE_G_CONVERGENCE*`` and one or more ``*<CRITERIA>_G_CONVERGENCE*`` keywords must be
 selected in addition to the preset. Specifying ``*<CRITERIA>_G_CONVERGENCE*`` without ``*FLEXIBLE_G_CONVERGENCE*`` will cause
 the preset to be discarded and optking will ONLY consider the ``*<CRITERIA>_G_CONVERGENCE*`` keyword for convergence.
