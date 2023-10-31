@@ -57,7 +57,7 @@ def test_input_through_json(inp, expected, num_steps, check_iter):
         assert inp, json_dict["trajectory"][-1]["schema_name"] == "qcschema_output"
 
     # For testing purposes. If this works, we have properly returned the output, and added the result
-    # to the original file. In order to preserve the form of the test suite, we now resore the input
+    # to the original file. In order to preserve the form of the test suite, we now restore the input
     # to its original state
     # with open(os.path.join(os.path.dirname(__file__), inp)) as input_data:
     #    json_dict = json.load(input_data)

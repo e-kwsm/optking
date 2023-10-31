@@ -292,7 +292,7 @@ def test_linesearch(check_iter):
 
     psi4.set_options(psi4_options)
 
-    # "linesearch" is not currrently recognized by psi4 read_options.
+    # "linesearch" is not currently recognized by psi4 read_options.
     json_output = opt.close()
     E = json_output["energies"][-1]
     nucenergy = json_output["trajectory"][-1]["properties"]["nuclear_repulsion_energy"]

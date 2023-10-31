@@ -7,7 +7,7 @@ from .utils import utils
 finalEnergy = -76.05776970  # TEST
 
 
-#! SCF CC-PVTZ geometry optimzation, with Z-matrix input
+#! SCF CC-PVTZ geometry optimization, with Z-matrix input
 @pytest.mark.parametrize(
     "option, expected, num_steps",
     [("RFO", finalEnergy, 5), ("NR", finalEnergy, 5), ("SD", finalEnergy, 10)],

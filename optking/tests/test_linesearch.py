@@ -29,7 +29,7 @@ def test_linesearch(check_iter):
 
     psi4.set_options(psi4_options)
 
-    # "linesearch" is not currrently recognized by psi4 read_options.
+    # "linesearch" is not currently recognized by psi4 read_options.
     json_output = optking.optimize_psi4("mp2", **{"linesearch": True})
     print(json_output)
     E = json_output["energies"][-1]
