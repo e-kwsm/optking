@@ -4,7 +4,7 @@ Convergence
 
 .. |delta|  unicode:: U+0394
 
-Optking utilizes a number of optimization presets which mirror and/or mimic the optmization behavior from a number
+Optking utilizes a number of optimization presets which mirror and/or mimic the optimization behavior from a number
 of popular Quantum Chemistry packages. These may be selected with the *G_CONVERGENCE* keyword. Descriptions of each
 preset may be found below. See Notes [#fe] and [#ff] for clarification on what combinations of
 criteria are required or allowed.
