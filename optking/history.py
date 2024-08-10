@@ -384,7 +384,7 @@ class History(object):
                             + (Z[i] * dq[j] + dq[i] * Z[j]) / dqdq
                         )
 
-            # If the cooordinate is constrained. Don't allow the update to occur.
+            # If the coordinate is constrained. Don't allow the update to occur.
             for i in range(Nintco):
                 if C[i, i] == 1:
                     H_new[i, :] = H_new[:, i] = np.zeros(len(f_q))
