@@ -18,5 +18,5 @@ except ImportError:
 using_psi4 = pytest.mark.skipif(found_psi4, reason="Psi4 not found, skipping.")
 using_qcmanybody = pytest.mark.skipif(
     which_import("qcmanybody", return_bool=True) is False,
-    reason="cound not find qcmanybody. please install the package to enable tests",
+    reason="could not find qcmanybody. please install the package to enable tests",
 )
