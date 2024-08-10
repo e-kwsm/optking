@@ -1,5 +1,5 @@
 # wrapper for optking's optimize function for input by psi4API
-# creates a moleuclar system from psi4s and generates optkings options from psi4's lsit of options
+# creates a molecular system from psi4s and generates optkings options from psi4's list of options
 import copy
 import json
 import logging
